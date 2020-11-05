@@ -24,7 +24,7 @@ fi
 
 echo " Enter email address "
 read input3
-email_pattern="^[a-zA-Z]{3}[0-9a-zA-Z\.\_\-]*\@[a-z]*\.(com|co|in|co.in|com.au)$"
+email_pattern="^[a-zA-Z]{3}[0-9a-zA-Z\.\_\-]*\@[a-z]*\.(com|co|in|co.in|com.au|net)$"
 if [[ $input3=~$email_pattern ]]
 then
 	echo "valid"
@@ -50,5 +50,21 @@ then
 	echo "valid"
 else
 	echo "invlid"
+fi
+
+a="abc@yahoo.com"
+b="abc-100@yahoo.com"
+c="abc.100@yahoo.com"
+d="abc111@abc.com"
+e="abc-100@abc.net"
+f="abc.100@abc.com.au"
+g="abc@1.com"
+h="abc@gmail.com.com"
+i="abc+100@gmail.com"
+if [[ $a=~$email_pattern]] && [[ $b=~$email_pattern ]] && [[ $c=~$email_pattern ]] && [[ $d=~$email_pattern ]] && [ $e=~$email_pattern ]] && [[ $f=~$email_pattern ]] && [[ $g=~$email_pattern ]] && [[ $h=~$email_pattern ]] && [[ $i=~$email_pattern ]]
+then
+	echo "valid"
+else
+	echo "invalid"
 fi
 
