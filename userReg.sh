@@ -42,3 +42,13 @@ else
 	echo "invalid"
 fi
 
+echo "Enter mobile number"
+read input5
+mobile_pattern="^(\+91)?[6-9]{1}[0-9]{9}$"
+if [[ $input5=~$mobile_pattern ]]
+then
+	echo "valid"
+else
+	echo "invlid"
+fi
+
