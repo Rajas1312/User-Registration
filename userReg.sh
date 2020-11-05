@@ -24,10 +24,22 @@ fi
 
 echo " Enter email address "
 read input3
-email_pattern="^[a-zA-Z]{3}[0-9a-zA-Z\.\_\-]*\@[a-z]*\.(com|co|in|co.in|com.au$"
+email_pattern="^[a-zA-Z]{3}[0-9a-zA-Z\.\_\-]*\@[a-z]*\.(com|co|in|co.in|com.au)$"
 if [[ $input3=~$email_pattern ]]
 then
 	echo "valid"
 else
 	echo "invalid"
 fi
+
+echo " Enter a password "
+read input4
+password_Pattern="^[0-9a-zA-Z]{8}[0-9a-zA-Z]*$"
+if [[ $input4=~$password_pattern ]]
+then
+	echo "valid"
+else
+	echo "invalid"
+fi
+
+
