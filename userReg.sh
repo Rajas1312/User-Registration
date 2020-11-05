@@ -34,7 +34,7 @@ fi
 
 echo " Enter a password "
 read input4
-password_Pattern="^[0-9a-zA-Z]{8}[0-9a-zA-Z]*[0-9A-Z]$"
+password_Pattern="^[0-9a-zA-Z]{8}[0-9a-zA-Z]*[0-9A-Z\!\@\#\$\%\^\&\*\_]*[0-9a-zA-Z]*$"
 if [[ $input4=~$password_pattern ]]
 then
 	echo "valid"
