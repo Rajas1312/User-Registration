@@ -21,3 +21,13 @@ then
 else
 	echo "invalid"
 fi
+
+echo " Enter email address "
+read input3
+email_pattern="^[a-zA-Z]{3}[0-9a-zA-Z\.\_\-]*\@[a-z]*\.(com|co|in|co.in|com.au$"
+if [[ $input3=~$email_pattern ]]
+then
+	echo "valid"
+else
+	echo "invalid"
+fi
