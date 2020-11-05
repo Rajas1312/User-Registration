@@ -34,12 +34,11 @@ fi
 
 echo " Enter a password "
 read input4
-password_Pattern="^[0-9a-zA-Z]{8}[0-9a-zA-Z]*$"
+password_Pattern="^[0-9a-zA-Z]{8}[0-9a-zA-Z]*[A-Z]*$"
 if [[ $input4=~$password_pattern ]]
 then
 	echo "valid"
 else
 	echo "invalid"
 fi
-
 
